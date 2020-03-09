@@ -1,0 +1,98 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+
+    <!-- 追加 -->
+    <style name="SmccAppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <!-- SMCC 共通ツールバー -->
+    <style name="SmccToolbarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/smcc_toolbar_title_color</item>
+        <item name="android:layout_height">112px</item>
+        <item name="android:textColorPrimary">@color/smcc_toolbar_title_color</item>
+        <item name="android:titleTextColor">@color/smcc_toolbar_title_color</item>
+        <item name="android:subtitleTextColor">@color/smcc_toolbar_title_color</item>
+        <item name="android:navigationIcon">@drawable/icon_arrow_back</item>
+        <item name="android:paddingLeft">32px</item>
+        <item name="android:contentInsetStartWithNavigation">0dp</item>
+        <item name="android:contentInsetLeft">0dp</item>
+        <item name="android:titleMargin">0px</item>
+        <item name="android:titleTextAppearance">@style/SmccToolbarTextAppearance</item>
+    </style>
+
+    <!-- SMCC 共通ツールバー本文設定 -->
+    <style name="SmccToolbarTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:textSize">40px</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+    <!-- SMCC ラジオボタン左 -->
+    <style name="SmccBlueRadioButtonLeft" parant="android:Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/smcc_radio_left</item>
+        <item name="android:textColor">@drawable/smcc_radio_text</item>
+        <item name="android:textSize">25px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+
+    <!-- SMCC ラジオボタン真ん中 -->
+    <style name="SmccBlueRadioButtonMiddle" parant="android:Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/smcc_radio_middle</item>
+        <item name="android:textColor">@drawable/smcc_radio_text</item>
+        <item name="android:textSize">25px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+
+    <!-- SMCC ラジオボタン右 -->
+    <style name="SmccBlueRadioButtonRight" parant="android:Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/smcc_radio_right</item>
+        <item name="android:textColor">@drawable/smcc_radio_text</item>
+        <item name="android:textSize">25px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+    <!-- SMCC ラジオボタン右 -->
+    <style name="SmccBlueRadioButtonRight2" parant="android:Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/light_blue</item>
+    </style>
+
+
+    <!-- SMCC 下のボタン -->
+    <style name="SmccButtonConfirm">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/smcc_confirm_button</item>
+    </style>
+
+
+    <style name="SmccButtonWarning">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/smcc_warning_button</item>
+    </style>
+</resources>

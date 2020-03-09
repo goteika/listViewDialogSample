@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="FullscreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/fullscreen_content"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:keepScreenOn="true"
+            android:text="SMCC決済センタ"
+            android:textColor="#33b5e5"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnReprint"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:onClick="reprintOK"
+            android:visibility="gone"
+            android:text="再印字成功">
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="即会計"
+            android:visibility="gone"
+            android:id="@+id/btnSelectItem">
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="初期化"
+            android:onClick="init"
+            android:visibility="gone"
+            android:id="@+id/btnCheckout">
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="表示"
+            android:onClick="display"
+            android:visibility="gone"
+            android:id="@+id/btnCheckoutFinish">
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="終了"
+            android:onClick="term"
+            android:visibility="gone"
+            android:id="@+id/btnTerm">
+        </Button>
+    </LinearLayout>
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+            <Button
+                android:id="@+id/dummy_button"
+                style="?metaButtonBarButtonStyle"
+                android:textColor="@color/smcc_common_white"
+                android:textSize="30dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="決済画面表示" />
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

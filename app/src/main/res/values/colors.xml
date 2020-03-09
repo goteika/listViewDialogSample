@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <!--新規 -->
+    <color name="transparent">#00FFFFFF</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="dark_gray">#666666</color>
+
+    <color name="light_blue">#80CFFF</color>
+    <color name="smcc_toolbar_title_color">#DE4A4A4A</color>
+
+    <color name="smcc_common_black">#4A4A4A</color>
+    <color name="stroke_light_background">#ffaaaaaa</color>
+
+    <color name="smcc_common_blue">#3093D0</color>
+    <color name="smcc_common_white">#FFFFFF</color>
+    <color name="smcc_button_default">#5AA8DC</color>
+    <color name="smcc_button_disabled">#b0c4de</color>
+
+    <color name="smcc_button_warning">#D9534F</color>
+</resources>

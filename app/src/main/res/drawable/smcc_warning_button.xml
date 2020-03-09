@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="37px" android:bottomRightRadius="37px" android:topLeftRadius="37px" android:topRightRadius="37px" />
+            <solid android:color="@color/smcc_button_warning" />
+        </shape>
+    </item>
+
+</selector>

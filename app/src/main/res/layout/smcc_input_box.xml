@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_text_round"
+    android:maxHeight="50dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAmountHint"
+        android:layout_centerVertical="true"
+        android:paddingLeft="5dp"
+        android:text="決済金額"
+        android:textSize="20dp"/>
+    <View
+        android:id="@+id/viewVertical"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/txtAmountHint"
+        android:background="@color/gray"/>
+    <EditText
+        android:id="@+id/txt_amount_input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textSize="23dp"
+        android:text="997987"
+        android:maxLength="8"
+        android:maxLines="1"
+        android:fontFamily="sans-serif-medium"
+        android:hint=""
+        android:background="@color/transparent"
+        android:layout_toRightOf="@id/viewVertical"/>
+</RelativeLayout>

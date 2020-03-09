@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="134px"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@drawable/list_selector_payament">
+
+    <ImageView
+        android:id="@+id/list_pay_icon"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo_coiney"
+        android:layout_marginLeft="50dp"
+        ></ImageView>
+
+
+    <TextView
+        android:id="@+id/list_pay_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/list_pay_icon"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+
+        android:text="COINEY決済"
+        android:textColor="@color/smcc_common_black"
+        android:textSize="30px" />
+
+</RelativeLayout>
